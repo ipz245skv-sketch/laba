@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Lab1.Classes;
 
 namespace Lab1
@@ -7,10 +7,8 @@ namespace Lab1
     {
         static void Main(string[] args)
         {
-            // Налаштування для підтримки української мови в консолі
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-            // Створення масиву посилань на абстрактний клас
             MusicalInstrument[] instruments = new MusicalInstrument[]
             {
                 new Violin(),
@@ -19,7 +17,6 @@ namespace Lab1
                 new Cello()
             };
 
-            // Перебір масиву та виклик методів
             foreach (var instrument in instruments)
             {
                 Console.WriteLine(new string('-', 30));
